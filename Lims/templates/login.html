@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMS - Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+
+    <link rel="stylesheet" href="{% static '/dist/login.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content-container">
+                <a href="/index.html" class="logo-heading">Lims</a>
+            <p class="sub-heading">
+                Login
+            </p>
+
+            <form class="login-form">
+                <div class="uk-inline my-inputs">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+                    <input class="uk-input username" type="text" placeholder="Username" aria-label="Clickable icon">
+                </div>
+                <div class="uk-inline my-inputs">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: eye"></span>
+                    <input class="uk-input" placeholder="Password" type="password" aria-label="Clickable icon">
+                </div>
+
+                <div class="buttons">
+                    <a href="/topics" class="submit-btn">Login</a>
+                    <a href="/" class="back-btn">Back</a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <img src="{% static '/dist/Images/login-banner.svg' %}" class="banner" alt="">
+    <img src="{% static '/dist/Images/login-ball.svg' %}" alt="" class="floating-ball">
+
+        <!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

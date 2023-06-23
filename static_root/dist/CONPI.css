@@ -1,0 +1,644 @@
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../fonts/Satoshi-Variable.woff2") format("woff2"), url("../fonts/Satoshi-Variable.woff") format("woff"), url("../fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../fonts/Satoshi-VariableItalic.woff") format("woff"), url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff"), url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff"), url("../fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff"), url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff"), url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff"), url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body .wrapper {
+  height: 100%;
+  width: 100%;
+  font-family: "Satoshi-Medium";
+}
+body .wrapper .main-form-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper .main-form-container .main-heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Satoshi-Bold";
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+body .wrapper .main-form-container .form-logo {
+  max-height: 8rem;
+  max-width: 8rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+body .wrapper .main-form-container .subheading {
+  margin: auto;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "Satoshi-Bold";
+}
+body .wrapper .main-form-container .chapt-description {
+  margin: auto;
+  font-size: 0.9rem;
+  font-family: "Satoshi-Medium";
+  padding-top: 0.5rem;
+}
+body .wrapper .main-form-container .chapt-description span {
+  font-family: "Satoshi-MediumItalic";
+}
+body .wrapper .main-form-container .form-heading {
+  margin: auto;
+  font-family: "Satoshi-Bold";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+}
+body .wrapper .main-form-container .form-wrapper {
+  padding-top: 2rem;
+  margin: auto;
+  width: 90%;
+}
+body .wrapper .main-form-container .form-wrapper .subheading {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}
+body .wrapper .main-form-container .form-wrapper .subheading span {
+  font-family: "Satoshi-Bold";
+}
+body .wrapper .main-form-container .form-wrapper .first-form-part {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body .wrapper .main-form-container .form-wrapper .first-form-part .farmName-container {
+  display: flex;
+  gap: 0.5rem;
+}
+body .wrapper .main-form-container .form-wrapper .first-form-part .farmName-container .position-number {
+  font-size: 0.9rem;
+  width: 10%;
+}
+body .wrapper .main-form-container .form-wrapper .first-form-part .farmName-container input {
+  border: none;
+  outline: none;
+  height: 1.2rem;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  width: 95%;
+  border-bottom: 1.2px dotted #1a1a1a;
+}
+body .wrapper .main-form-container .form-wrapper .first-form-part .district-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+body .wrapper .main-form-container .form-wrapper .first-form-part .district-container .position-number {
+  font-size: 0.9rem;
+}
+body .wrapper .main-form-container .form-wrapper .first-form-part .district-container input {
+  height: 2rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 0.5rem;
+  border: 1.2px solid #1a1a1a;
+}
+body .wrapper .main-form-container .form-wrapper .first-form-part .district-container > div {
+  display: flex;
+  gap: 1rem;
+}
+body .wrapper .main-form-container .form-wrapper .category-container {
+  display: flex;
+  gap: 0.5rem;
+}
+body .wrapper .main-form-container .form-wrapper .category-container .category-fill {
+  border: none;
+  outline: none;
+  height: 1.2rem;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  width: 90%;
+  border-bottom: 1.2px dotted #1a1a1a;
+}
+body .wrapper .main-form-container .form-wrapper .category-container .position-number {
+  width: 45%;
+  font-size: 0.9rem;
+}
+body .wrapper .main-form-container .farm-owner-container {
+  display: flex;
+  gap: 0.5rem;
+}
+body .wrapper .main-form-container .farm-owner-container .owner-fill {
+  border: none;
+  outline: none;
+  height: 1.2rem;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  width: 85%;
+  border-bottom: 1.2px dotted #1a1a1a;
+}
+body .wrapper .main-form-container .farm-owner-container .position-number {
+  width: 15%;
+  font-size: 0.9rem;
+}
+body .wrapper .main-form-container .applicant-container {
+  display: flex;
+  gap: 0.5rem;
+}
+body .wrapper .main-form-container .applicant-container .applicant-fill {
+  border: none;
+  outline: none;
+  height: 1.2rem;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  width: 85%;
+  border-bottom: 1.2px dotted #1a1a1a;
+}
+body .wrapper .main-form-container .applicant-container .position-number {
+  width: 20%;
+  font-size: 0.9rem;
+}
+body .wrapper .main-form-container .contact-container {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+body .wrapper .main-form-container .contact-container .contact-fill {
+  border: none;
+  outline: none;
+  height: 1.2rem;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  width: 100%;
+  border-bottom: 1.2px dotted #1a1a1a;
+}
+body .wrapper .main-form-container .contact-container .contact-input {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .wrapper .main-form-container .contact-container .position-number {
+  width: 25%;
+  font-size: 0.9rem;
+}
+body .wrapper .main-form-container .notice {
+  font-family: "Satoshi-BoldItalic";
+}
+body .wrapper .main-form-container .notice span {
+  font-family: "Satoshi-Medium";
+}
+body .wrapper .table-container {
+  margin-top: 2rem;
+}
+body .wrapper .table-container .position-number {
+  font-size: 0.9rem;
+}
+body .wrapper .table-container .position-number span {
+  font-family: "Satoshi-Bold";
+}
+body .wrapper .table-container td {
+  font-size: 0.9rem;
+}
+body .wrapper .legal-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+body .wrapper .legal-container .position-number {
+  font-size: 0.9rem;
+  position: relative;
+  margin-top: 0.5rem;
+}
+body .wrapper .legal-container .selection {
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  gap: 1rem;
+  height: 2rem;
+}
+body .wrapper .legal-container .selection p {
+  font-size: 0.9rem;
+}
+body .wrapper .legal-container .selection .yes {
+  margin-top: 1rem;
+}
+body .wrapper .settlers {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+body .wrapper .settlers .position-number {
+  font-size: 0.9rem;
+}
+body .wrapper .settlers #number-settlers {
+  outline: none;
+  border: 1.2px solid #1a1a1a;
+  border-radius: 4px;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+body .wrapper .conpi-container {
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+body .wrapper .conpi-container .position-number {
+  font-size: 0.9rem;
+  width: 35%;
+}
+body .wrapper .conpi-container .reason-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .wrapper .conpi-container #conpi-reason {
+  border: none;
+  outline: none;
+  height: 1.2rem;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  width: 100%;
+  border-bottom: 1.2px dotted #1a1a1a;
+}
+body .wrapper .eSignature-date {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+  position: relative;
+}
+body .wrapper .eSignature-date p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body .wrapper .eSignature-date > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+body .wrapper .Upload-documents {
+  margin-top: 3rem;
+}
+body .wrapper .Upload-documents h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: "Satoshi-Bold";
+}
+body .wrapper .Upload-documents .upload-btn {
+  height: 2rem;
+  width: 8rem;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  background: #08A045;
+}
+
+.footer {
+  margin-top: 5vh;
+  height: 70vh;
+  width: 100vw;
+  position: absolute;
+  left: 0 !important;
+  margin-inline: auto;
+  background: #f5f5f5;
+}
+.footer .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 4rem;
+}
+.footer .footer-wrapper .description {
+  margin-top: 5.5rem;
+}
+.footer .footer-wrapper .description .main-footer-heading {
+  color: #1a1a1a;
+  font-family: "Satoshi-Medium";
+  font-size: 1.3rem;
+  width: 60%;
+}
+.footer .footer-wrapper .main-footer-container, .footer .footer-wrapper .bottom-footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-wrapper .main-links {
+  margin-top: 3rem;
+  display: flex;
+  gap: 5rem;
+}
+.footer .footer-wrapper .main-links .sub-link {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.footer .footer-wrapper .main-links .sub-link h4 {
+  color: #98A2B3;
+  font-size: 0.8rem;
+  font-family: "Satoshi-Medium";
+}
+.footer .footer-wrapper .main-links .sub-items {
+  margin-top: -0.3rem;
+  padding: 0 !important;
+  width: 5rem;
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.footer .footer-wrapper .main-links .sub-items a:hover {
+  color: #c9c9c9;
+  margin-left: 0.5rem;
+}
+.footer .footer-wrapper .main-links .sub-items .link {
+  position: relative;
+}
+.footer .footer-wrapper .main-links .sub-items a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  font-family: "Satoshi-Medium";
+  transition: color 0.2s ease-in-out;
+  transition: margin-left 0.2s ease-in-out;
+}
+.footer .footer-wrapper .bottom-footer-container {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-wrapper .bottom-footer-container .copyright-wrapper {
+  display: block;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+.footer .footer-wrapper .bottom-footer-container .copyright-wrapper h3 {
+  position: relative;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+.footer .footer-wrapper .bottom-footer-container h3 {
+  color: #98A2B3;
+  font-family: "Satoshi-Medium";
+  font-size: 0.95rem;
+}
+.footer .footer-wrapper .bottom-footer-container .social-media-container {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1.5rem;
+}
+.footer .footer-wrapper .bottom-footer-container .social-media-container img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.divider {
+  height: 1px;
+  background: #828282;
+  opacity: 12%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  margin: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  font-family: "Satoshi-Regular";
+  justify-content: space-between;
+}
+.navigation .logo {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navigation .navigation-items {
+  position: relative;
+  height: 3rem;
+  display: block;
+  align-content: center;
+}
+.navigation .nav-items {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.navigation .nav-items a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: color 0.2s ease-in-out;
+}
+.navigation .nav-items .active {
+  font-family: "Satoshi-Bold";
+  color: #08A045 !important;
+}
+.navigation .nav-items .nav-link a:hover {
+  color: #08A045;
+}
+.navigation .search-bar {
+  display: flex;
+  align-items: center;
+}
+.navigation .search-bar .search-icon {
+  margin-left: -2rem;
+}
+.navigation .search-bar #search {
+  height: 2.2rem;
+  border: 1.2px solid hwb(144 3% 37%/0.07);
+  border-radius: 4px;
+  width: 15rem;
+  background-color: hwb(144 3% 37%/0.07);
+  outline: none;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.navigation .search-bar ::-moz-placeholder {
+  font-family: "Satoshi-Medium";
+  color: #1a1a1a;
+  opacity: 0.9;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+.navigation .search-bar ::placeholder {
+  font-family: "Satoshi-Medium";
+  color: #1a1a1a;
+  opacity: 0.9;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+.navigation .user-profile {
+  display: flex;
+  gap: 1rem;
+}
+.navigation .user-profile .dropdown-icon {
+  margin-top: -0.2rem;
+}
+.navigation .user-profile .notifications {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+.navigation .user-profile .notifications .notifications-icon {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.navigation .user-profile .avatar-dropdown {
+  display: flex;
+  gap: 0.5rem;
+  height: 2.2rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: hwb(144 3% 37%/0.07);
+}
+.navigation .user-profile .avatar-dropdown p {
+  font-size: 0.9rem;
+  font-family: "Satoshi-Medium";
+}
+.navigation .user-profile .avatar-dropdown .avatar-container {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+.navigation .user-profile .avatar-dropdown .avatar-container .avatar-icon {
+  margin-top: -0.2rem;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=CONPI.css.map */

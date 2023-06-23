@@ -1,0 +1,734 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Information Management System - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'dist/main.css' %}">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+
+    <style>
+        @media (min-width: 992px) {
+            .navigation {
+                /* background: red; */
+                margin-top: -0rem !important;
+            }
+            .about-wrapper {
+                margin-top: -4rem;
+                display: flex;
+                gap: 3rem;
+                /* flex-direction: column; */
+                align-items: center;
+                padding-bottom: 2rem;
+            }
+            .about-wrapper > div {
+                width: 50%;
+
+            }
+            .about-main-heading {
+                /* text-align: center; */
+                font-family: 'Satoshi-Bold';
+                color: #1a1a1a;
+                font-size: 2rem;
+
+            }
+            .content .heading {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper container-fluid">
+        <div class="navigation"> 
+            <div class="logo">
+                <a href="/" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 150">LIMS</a>
+            </div>
+
+            <div class="main-navigation">
+                <ul class="nav-container" uk-scrollspy="cls: uk-animation-slide-left-small; target: .nav-items; delay: 200">
+                    <li class="nav-items"><a href="/" class="active">Home</a></li>
+                    <li class="nav-items"><a href="#services">Services</a></li>
+                    <li class="nav-items"><a href="./enquiries_faq">Enquiries</a></li>
+                    <li class="nav-items"><a href="#contact_us">Contact Us</a></li>
+                    <li class="nav-items"><a href="./knowledge_center">Knowledge Center</a></li>
+                </ul>
+            </div>
+
+            <div class="navigation-btns">
+                <a href="./login" class="login-btn" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 1800"> Login</a>
+                <a href="#">
+                    <img src="{% static 'dist/Images/hamburger-menu.svg' %}" alt="Menu" class="hamburger-menu">
+                </a>
+            </div>
+        </div>
+        <!--Navigation-->
+
+     <div class="banner">
+        <div class="banner-wrapper">
+        <div class="content">
+            <h1 class="main-heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1800">
+                The <span> <img src="{% static 'dist/Images/LIMS Gradients/banner-gradient.svg' %}" alt=""> </span> Management System.
+            </h1>
+
+            <h2 class="sub-heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1800">
+                Get information, manage data and track the progress of your applications. 
+            </h2>
+
+            <p class="para-1" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1800">
+                The Ministry of Lands, Agriculture, Fisheries, Water and Rural Development, is responsible for managing land resources and implementing land reform programs in Zimbabwe
+            </p>
+            <div class="banner-cta">
+                <a href="CONPI-Application-Form.html" class="get-started-btn" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 2100">Apply for CONPI
+                    <img src="{% static 'dist/Images/right-arrow.svg' %}" alt="" class="arrow-icon">
+                </a>
+                <div class="uk-margin" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1800">
+                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Sign Up For Updates" aria-label="Medium">
+                </div>
+
+            </div>
+
+                <div class="banner-reviews" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 2300">
+                            <div class="banner-testimonial">
+                                <div class="visuals">
+                                    <img src="{% static 'dist/Images/banner-icons/banner-social-proof.svg' %}" alt="" class="banner-testimonial">
+                                </div>
+                                <div class="content">
+                                    <p class="main-review">Our Happy Beta Tester's</p>
+                                    <div class="stars-review">
+                                        <img src="{% static '/dist/Images/banner-icons/stars-banner.svg' %}" alt="">
+                                        <p>4.8 (2K Reviews)</p>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <!--  -->
+        </div>
+        <!--Content-->
+        <img src="{% static '/dist/Images/landing.png' %}" alt="Landing Image" class="banner-image" uk-scrollspy="cls: uk-animation-fade; delay: 2700">
+    </div>
+        <!--Visuals-->
+        <div class="banner-icons"  uk-scrollspy="cls: uk-animation-slide-left-small; target: img; delay: 1200">
+            <img src="{%static '/dist/Images/banner-icons/Group 25.svg' %}" class="icon-1" alt="" >
+            <img src="{%static '/dist/Images/banner-icons/Group 26.svg' %}" class="icon-2" alt="" >
+            <img src="{%static '/dist/Images/banner-icons/Group 27.svg' %}" class="icon-3" alt="" >
+        </div>
+
+                    <!-- <div uk-slider="autoplay: true; autoplay-interval: 600">   
+                        <div class="uk-position-relative uk-visible-toggle uk-light slider-logos"  tabindex="-1" uk-slider>
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid-small">
+                                <li>
+                                    <div class="uk-panel">
+                                        <img src="{% static 'dist/Images/slider-images/image 9.svg' %}" width="800" height="800" alt="">
+                                        
+                                    </div>
+                                </li>
+                                <li >
+                                    <div class="uk-panel">
+                                        <img src="{% static 'dist/Images/slider-images/image 10.svg' %}" width="800" height="800" alt="">
+                                    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel">
+                                        <img src="{% static 'dist/Images/slider-images/image 11.svg' %}" width="800" height="800" alt="">
+                                    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel">
+                                        <img src="{% static 'dist/Images/slider-images/image 12.svg' %}" width="800" height="800" alt="">
+                                    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel">
+                                        <img src="{% static 'dist/Images/slider-images/image 13.svg' %}" width="800" height="800" alt="">
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel">
+                                        <img src="{% static 'dist/Images/slider-images/image 6.svg' %}" width="800" height="800" alt="">
+                                    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel">
+                                        <img src="{% static 'dist/Images/slider-images/image 7.svg' %}" width="800" height="800" alt="">
+                                
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel">
+                                        <img src="{% static 'dist/Images/slider-images/image 8.svg' %}" width="800" height="800" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                        <!--Social Proof logo slider-->
+
+        <div class="about-wrapper">
+            <div>
+                <h2 class="about-main-heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1300">
+                    About Us
+                </h2>
+                <p class="about-description" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1600">
+                    The Department of Land Administration and Management, under the Ministry of Lands, Agriculture, Fisheries, Water and Rural Development, is responsible for managing land resources and implementing land reform programs in Zimbabwe. 
+                    Our mission is to facilitate equitable access to land and sustainable land use for social and economic development.<br><br>
+                    With our system, we can simplify public access to land records by maintaining digitally accurate and up-to-date information for the land in your area. Our GIS tools provide a platform for modeling, visualization, collaboration, and analysis. With multiple criteria evaluation (MCE), 
+                    land management becomes an interactive task, allowing for the weighting of various criteria based on importance.   
+                </p>
+            </div>
+
+            <div uk-scrollspy="cls: uk-animation-slide-right-small; delay: 1900">
+                <img src="{%static 'dist/Images/image2.jpg'%}" alt="About-Image">
+            </div>
+        </div>
+        <!-- About Us -->
+
+
+        <div class="look-around">
+            <div class="visuals">
+                <img src="{% static 'dist/Images/look-around.png' %}" alt="Look-Around-Image" class="look-around-visuals" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 300">
+            </div>
+            <!--Visuals-->
+
+            <div class="content">
+                <h1 class="heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">
+                    Take a look around, we have updated our system.
+                </h1>
+
+                <p class="descriptions" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500">
+                    With our system, we can simplify public access to land records by maintaining digitally accurate and up-to-date information for the land in your area. Our GIS tools provide a platform for modeling, visualization, collaboration, and analysis. With multiple criteria evaluation (MCE), land management becomes an interactive task, allowing for the weighting of various criteria based on importance.
+                    <br></br>
+                    Our system allows for the changing of variables on-the-fly, to immediately visualize the implications of changes. The ability to rapidly alter and analyze a wide variety of land use options is why GIS has become imperative to land management. With our system, you can make better and more informed decisions with geospatial insights.
+                    
+                </p>
+
+                <a href="#" class="action-here" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">Take an action here
+                </a>
+            </div>
+            <!--Content-->
+        </div>
+
+        <h1 class="page-heading">
+            The latest and best from  <span uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800"><img src="{% static '/dist/Images/LIMS Gradients/lims-first.svg' %}" alt=""></span>
+        </h1>
+        <!--Page heading-->
+
+    <div uk-slider="autoplay: true">
+        <div class="testimonials">
+            <div class="testiomonial-description">
+                <p class="heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 450; autoplay-interval: 2000">beta testers</p>
+                <p class="description" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">
+                    People have tried and tested our beta system, we have received nothing but great reviews. Become a tester!
+                </p>
+
+                <a href="./login.html" class="start-testing" uk-scrollspy="cls: uk-animation-fade-small; delay: 350">Start testing
+                    <img src="{% static '/dist/Images/right-arrow.svg' %}" alt="" class="arrow-icon">
+                </a>
+            </div>
+            <!--Testimonial Descriptions-->
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+                <ul class="uk-slider-items uk-grid uk-width-3-4 uk-child-width-2-3@s">
+                    <li class="uk-width-2-3@m">
+                        <div class="uk-panel testimonial-sliders">
+                            <div class="slider-testimonial-1" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 800">
+                                <div class="profile-picture">
+                                    <img src="{% static '/dist/Images/testimonial-picture.png' %}" alt="Profile Picture">
+                                </div>
+            
+                                <div class="partner-name">
+                                    <p>Jane Dore </p>
+                                </div>
+            
+                                <div class="star-rating">
+                                    <img src="{% static '/dist/Images/stars.svg' %}" alt="Stars" class="stars">
+                                </div>
+            
+                                <p class="testimonial">
+                                    As a local government official, I have been extremely impressed with the land management system and its integration with GIS technology. The system has made it easier for us to effectively govern and manage land for social stability, sustainable economic development, and equitable taxation. The ability to access and analyze geospatial data from multiple sources has been incredibly helpful for understanding patterns and relationships between different datasets. Overall, I believe that the land management system has been an invaluable tool for our community.
+                                </p>
+                            </div>
+                            <!--Sldier Testimonial-->
+                        </div>
+                    </li>
+                    <li class="uk-width-2-3@m uk-width-1-2@s">
+                        <div class="uk-panel">
+                            <div class="slider-testimonial-1" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 800">
+                                <div class="profile-picture">
+                                    <img src="{% static '/dist/Images/testimonial-picture.png' %}" alt="Profile Picture">
+                                </div>
+            
+                                <div class="partner-name">
+                                    <p>Jane Dore </p>
+                                </div>
+            
+                                <div class="star-rating">
+                                    <img src="{% static '/dist/Images/stars.svg' %}" alt="Stars" class="stars">
+                                </div>
+            
+                                <p class="testimonial">
+                                    As a land manager, I have been thoroughly impressed with the land management system and its integration with GIS technology. The system allows me to easily access and analyze geospatial data from multiple sources, including satellite imagery and GPS recordings. The interactive maps and data visualizations have been incredibly helpful for understanding patterns and relationships between different datasets. I highly recommend this system to anyone looking to improve their land management practices.
+                                </p>
+                            </div>
+                            <!--Sldier Testimonial-->
+                        </div>
+                    </li>
+                    <li class="uk-width-2-3@m">
+                        <div class="uk-panel">
+                            <div class="slider-testimonial-1" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 800">
+                                <div class="profile-picture">
+                                    <img src="{% static '/dist/Images/testimonial-picture.png' %}" alt="Profile Picture">
+                                </div>
+            
+                                <div class="partner-name">
+                                    <p>Jane Dore </p>
+                                </div>
+            
+                                <div class="star-rating">
+                                    <img src="{% static '/dist/Images/stars.svg' %}" alt="Stars" class="stars">
+                                </div>
+            
+                                <p class="testimonial">
+                                    As a landowner, I have found the land management system to be an essential tool for managing my property. The integration with GIS technology allows me to easily access detailed information about my land, including land tenure, value, management, and use. The system’s ability to integrate with map data and farm registers has also been incredibly helpful for understanding patterns and relationships between different datasets. I am extremely satisfied with the land management system and would highly recommend it to other landowners
+                                </p>
+                            </div>
+                            <!--Sldier Testimonial-->
+                        </div>
+                    </li>
+                    <li class="uk-width-2-3@m">
+                        <div class="uk-panel">
+                            <div class="slider-testimonial-1" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 800">
+                                <div class="profile-picture">
+                                    <img src="{% static '/dist/Images/testimonial-picture.png' %}" alt="Profile Picture">
+                                </div>
+            
+                                <div class="partner-name">
+                                    <p>Jane Dore </p>
+                                </div>
+            
+                                <div class="star-rating">
+                                    <img src="{% static '/dist/Images/stars.svg' %}" alt="Stars" class="stars">
+                                </div>
+            
+                                <p class="testimonial">
+                                    I have been using the land management system for several months now and have found it to be an invaluable tool for managing my farm. The integration with map data and farm registers has made it easier than ever to access detailed information about my land and make informed decisions. The ability to view and export farm/tract maps has also been incredibly helpful for working with lenders and service providers. Overall, I am extremely satisfied with the land management system and would recommend it to other farmers
+                                </p>
+                            </div>
+                            <!--Sldier Testimonial-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--Sldier Testimonial-->
+        </div>
+    </div>
+        <!--Testimonials-->
+
+        <div class="services-wrapper" id="services">
+            <p class="services-main-heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">Our Services</p>
+            <p class="sub-heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1000">Our new system possess great features that can be used by anyone at any given time, from the digital cadastre maps to land valuation!</p>
+       
+            <div class="services-card-container" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .my_card; delay: 400">
+                <div class="card-1 my_card">
+                    <p class="card-heading">Acquisition</p>
+                    <img src="{% static '/dist/Images/Services/research-left.svg' %}" alt="card-icon" class="card-icon">
+                    <p class="card-description">
+                        Our new system possess great features that can be used by anyone at any given time, from the digital cadastre maps to land valuation!
+                    </p>
+                </div>
+
+                <div class="card-2 my_card">
+                    <p class="card-heading">Ressetlement</p>
+                    <img src="{% static '/dist/Images/Services/house-storm.svg' %}" alt="card-icon" class="card-icon">
+                    <p class="card-description">
+                        Our new system possess great features that can be used by anyone at any given time, from the digital cadastre maps to land valuation!
+                    </p>
+                </div>
+
+                <div class="card-3 my_card">
+                    <p class="card-heading">Estates</p>
+                    <img src="{% static '/dist/Images/Services/steamer.svg' %}" alt="card-icon" class="card-icon">
+                    <p class="card-description">
+                        Our new system possess great features that can be used by anyone at any given time, from the digital cadastre maps to land valuation!
+                    </p>
+                </div>
+
+                <div class="card-4 my_card">
+                    <p class="card-heading">Valuation</p>
+                    <img src="{% static '/dist/Images/Services/money-alt-1.svg' %}" alt="card-icon" class="card-icon">
+                    <p class="card-description">
+                        Our new system possess great features that can be used by anyone at any given time, from the digital cadastre maps to land valuation!
+                    </p>
+                </div>
+            </div>
+
+            <div class="key-features-container">
+                <p class="features-main-heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">System Key <span>Features</span> </p>
+                <ul class="features" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: li; delay: 200">
+                    <li>Digital cadastre map showing all state and privately owned land</li>
+                    <li>Database of land owners and land beneficiaries</li>
+                    <li>Land valuation</li>
+                    <li>Maps and reports on land use and land cover change</li>
+                </ul>
+            </div>
+
+            <a href="#" class="action" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 600">Knowledge Center</a>
+        </div>
+        <!-- Services -->
+
+        <div class="map-container">
+            <div class="map-content">
+                <div class="map-wrapper">
+                    <div>
+                        <h1 uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">map data</h1>
+    
+                        <p class="description" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">
+                            Our land management system integrates with map data to provide a powerful tool for land governance. GIS connects data to a map, integrating location data (where things are) with all types of descriptive information (what things are like there).
+                            Our system allows for the integration and collective analysis of geospatial data from multiple sources, including satellite imagery, GPS recordings, and textual attributes associated with a particular space. GIS components include visualizations through interactive maps and data based on the location of features or variables represented.                            
+                        </p>
+                    </div>
+    <!---->
+                    <div>
+                        <h1 uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">Farm Register</h1>
+    
+                        <p uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1000">Our land management system can also integrate with farm registers that contain information about farm owners. With our system, farmers with accounts can access their farm records and maps online. This allows them to view, print, and export detailed farm records such as cropland, base acres, yields, CRP acres, land ownership details, and much more. They can also view, print, and export farm/tract maps that can be provided to lenders, chemical or fertilizer providers, and FSA for reporting acreage and crop insurance agents.
+                            The ability to access these records on demand without a visit to the service center saves farmers time and money.
+                            </p>
+                    </div>
+                </div>
+                <a href="#" class="take-action" img src="{% static '/dist/Images/right-arrow.svg' %}" alt="" class="arrow-icon" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1200">Take an action here
+                    <img src="{% static '/dist/Images/right-arrow.svg' %}" alt="" class="arrow-icon">
+                </a>
+            </div>
+            <!--Map Content-->
+
+            <div class="visuals">
+                <img src="{% static '/dist/Images/map-data.png' %}" alt="Map Visuals" class="map-visuals" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 800">
+            </div>
+            <!--Map Visuals-->
+
+        </div>
+        <!--Map Container-->
+
+        <div class="social-proof-container">
+            <div class="social-number-1" uk-scrollspy="cls: uk-animation-fade; delay: 800">
+                <h1>100+</h1>
+                <p class="description">Beta Testers</p>
+            </div>
+        <!---->
+            <div class="social-number-2" uk-scrollspy="cls: uk-animation-fade; delay: 800">
+                <h1>50+</h1>
+                <p class="description">Awesome Reviews</p>
+            </div>
+        <!---->
+            <div class="social-number-3" uk-scrollspy="cls: uk-animation-fade; delay: 800">
+                <h1>1200+</h1>
+                <p class="description">People Served In a Day</p>
+            </div>
+        <!---->
+            <div class="social-number-4" uk-scrollspy="cls: uk-animation-fade; delay: 1000">
+                <h1>200+</h1>
+                <p class="description">Officers Available</p>
+            </div>
+        <!---->
+
+        </div>
+        <!--Social proof container-->
+
+        <div class="main-cards" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .my-cards; delay: 400">
+            <div class="lims-description-card-1 my-cards">
+                <div class="card-main-img">
+                    <img src="{% static '/dist/Images/map-data.png' %}" alt="Card Main Image">
+                </div>
+
+                <div class="card-main-heading">
+                    <h1>Ressetlement</h1>
+                </div>
+
+                <div class="card-description">
+                    <p>Farm resettlement refers to the process of relocating farmers from their original farmland to a new location. This can happen for various reasons such as urbanization, land expropriation, and policy changes. If you want to know more about this process go to the knowledge center.</p>
+                </div>
+            </div>
+            <!---->
+            <div class="lims-description-card-2 1 my-cards">
+                <div class="card-main-img">
+                    <img src="{% static '/dist/Images/map-data.png' %}" alt="Card Main Image">
+                </div>
+
+                <div class="card-main-heading">
+                    <h1>Enquiries<h1>
+                </div>
+
+                <div class="card-description">
+                    <p class="enquiries-text">Here at LIMS, we understand the importance of timely and accurate information. That’s why we have a dedicated team in place to handle all your enquiries and questions efficiently and with a sense of urgency.If you have a specific question in mind, our team is here to help. And the best part? You can contact us at any time. We are always available to assist you and provide the information you need to make informed decisions.</p>
+                </div>
+
+                <a href="#" class="make-enquiry">Make Enquiry</a>
+            </div>
+            <!---->
+            <div class="lims-description-card-3 1 my-cards">
+                <div class="card-main-img">
+                    <img src="{% static '/dist/Images/map-data.png' %}" alt="Card Main Image">
+                </div>
+
+                <div class="card-main-heading">
+                    <h1>Knowledge Center </h1>
+                </div>
+
+                <div class="card-description">
+                    <p>A knowledge center is a valuable resource that provides people with a platform to share questions and information. It allows individuals to connect with others who have similar interests or expertise, and to exchange ideas and knowledge. In addition to providing a forum for discussion, a knowledge center may also offer features such as private messaging, allowing users to communicate directly with one another.</p>
+                </div>
+
+                <a href="/knowledge-center.html" class="knowledge-btn">Knowledge Center</a>
+            </div>
+            <!---->
+        </div>
+        <!--Main Cards-->
+
+
+        <div class="application-progress">
+            <div class="content">
+                <h1 class="heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">
+                    Check the progress of your <span>CONPI</span> application.
+                </h1>
+                <h3 class="sub-heading" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">
+                    It's all possible in three easy steps, you can get started today!
+                </h3>
+                <p class="description" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800">
+                   We've intergrated the latest technology into our system so that you can always know the current state and progress of all of your applications, including the CONPI application! When your application is completed we will notify you so that you can take the necessary next steps.
+                </p>
+
+                <p class="sub-description">
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Natus adipisci perferendis labore fuga eius praesentium cumque quis. Rerum, velit veniam.
+                </p>
+
+                <div class="application-steps" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1000">
+                    <ul>
+                        <li>Filling out the CONPI application form can be done online or in person at one of our designated offices.</li>
+                        <li>After filling out and submitting the form, our team will review it. This process usually takes XX days and then you'll get notified if it was approved </li>
+                        <li>You'll get notified via email or your method of choice</li>
+                    </ul>
+                </div>
+
+                <a href="/CONPI-Application-Form.html" class="take-action" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1200">Take an action here
+                    <img src="{% static 'dist/Images/right-arrow.svg' %}" alt="" class="arrow-icon">
+                </a>
+            </div>
+            <!---->
+
+            <div class="application-visuals">
+                <div class="application-container" uk-scrollspy="cls: uk-animation-fade; target: div; delay: 600">
+                    <div class="step-1" >
+                        <h2 class="numbering">01</h2>
+                        <h1 class="heading">Fill Out Form Online</h1>
+                    </div>
+                    <!---->
+                    <div class="step-2">
+                        <h2 class="numbering">02</h2>
+                        <h1 class="heading">Processing</h1>
+                    </div> 
+                    <!----> 
+                    <div class="step-3">
+                        <h2 class="numbering">03</h2>
+                        <h1 class="heading">Approval</h1>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+        <!--Application Progress-->
+
+        <div class="knowledge-center">
+            <h1 class="heading">Check out our new <br><span uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 800"><img src="{% static '/dist/Images/LIMS Gradients/knowledge.svg' %}" alt="" class="knowledge-gradient"></span> <img src="{% static '/dist/Images/knowledge-center-chat-icon.svg' %}" class="knowledge-center-icon" alt="Knowledge Center" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay:1200"></h1>
+
+            <div class="main-visual-knowledge-center">
+                <img src="{% static '/dist/Images/knowledge-center-image.png' %}" alt="Knowledge Center" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1800">
+            </div>
+
+            <a href="/knowledge-center.html" class="take-action" uk-scrollspy="cls: uk-animation-fade; delay: 800">Take me to center
+                <img src="{% static '/dist/Images/right-arrow.svg' %}" alt="" class="arrow-icon">
+            </a>
+        </div>
+        <!--Knowledge Center-->
+
+        <div class="contact-container" id="contact_us">
+            <div class="content-wrapper">
+                <div class="contact-details">
+                    <div class="top-wrapper">
+                        <h2 class="main-heading">Do you have a query?</h2>
+                        <p class="subheading">Do you want to apply for a CONPI or have any other enquiries, do not hesitate to reach out to us or go to the Knowledge Center </p>
+                    </div>
+                    <!--  -->
+
+                    <div class="bottom-wrapper">
+                        <div class="location">
+                            <img src="{% static '/dist/Images/contact-form/Group 54.svg' %}" alt="location-description">
+                            <p class="location">
+                                1 off judson Road Snr Monavale rd Milton Park Harare
+                            </p>
+                        </div>
+                        <div class="phone">
+                            <img src="{% static '/dist/Images/contact-form/Group 55.svg' %}" alt="phone">
+                            <p class="phone-description">
+                                +263 78 531 4390
+                            </p>
+                        </div>
+                        <div class="mail">
+                            <img src="{% static '/dist/Images/contact-form/Group 56.svg' %}" alt="mail-image">
+                            <p class="mail-description">
+                                info@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                 
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-input-wrapper">
+                            <div class="name">
+                                <p>Full Name</p>
+                                <input type="text" name="full-name" id="full-name">
+                            </div>
+                            <!--  -->
+                            <div class="email-address">
+                                <p>Email Address</p>
+                                <input type="text" name="email-address" id="email-address">
+                            </div>
+                            <!--  -->
+                            <div class="subject">
+                                <p>Subject</p>
+                                <input type="text" name="subject" id="subject">
+                            </div>
+                            <!--  -->
+                            <div class="Message">
+                                <textarea class="uk-textarea" rows="5" placeholder="Message" aria-label="Textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <a href="#" class="submit-btn">Send
+                            <img src="#" alt="">
+                        </a>
+
+                        <!--  -->
+                    </form>
+                </div>
+            </div>
+        </div>
+<!-- Contact Section -->
+
+        <div class="footer">
+            <div class="footer-wrapper">
+                <div class="main-footer-container">
+                    <div class="description">
+                            <h2 class="main-footer-heading">
+                                Land Information Management System
+                            </h2>
+                    </div>
+                    <!--  -->
+                    <div class="main-links">
+                        <div class="sub-link">
+                            <h4 class="sub-link-heading">Product</h4>
+                            <ul class="sub-items">
+                                <li class="link"><a href="#">Overview</a></li>
+                                <li class="link"><a href="#">Features</a></li>
+                                <li class="link"><a href="#">Solutions</a></li>
+                                <li class="link"><a href="#">Tutorials</a></li>
+                                <li class="link"><a href="#">Pricing</a></li>
+                                <li class="link"><a href="#">Releases</a></li>
+                            </ul>
+                        </div>
+                        <!-- Sub Link -->
+                        <div class="sub-link">
+                            <h4 class="sub-link-heading">Company</h4>
+                            <ul class="sub-items">
+                                <li class="link"><a href="#">Overview</a></li>
+                                <li class="link"><a href="#">Features</a></li>
+                                <li class="link"><a href="#">Solutions</a></li>
+                                <li class="link"><a href="#">Tutorials</a></li>
+                                <li class="link"><a href="#">Pricing</a></li>
+                                <li class="link"><a href="#">Releases</a></li>
+                            </ul>
+                        </div>
+                        <!-- Sub Link -->
+                        <div class="sub-link">
+                            <h4 class="sub-link-heading">Resources</h4>
+                            <ul class="sub-items">
+                                <li class="link"><a href="#">Overview</a></li>
+                                <li class="link"><a href="#">Features</a></li>
+                                <li class="link"><a href="#">Solutions</a></li>
+                                <li class="link"><a href="#">Tutorials</a></li>
+                                <li class="link"><a href="#">Pricing</a></li>
+                                <li class="link"><a href="#">Releases</a></li>
+                            </ul>
+                        </div>
+                        <!-- Sub Link -->
+                        <div class="sub-link">
+                            <h4 class="sub-link-heading">Social</h4>
+                            <ul class="sub-items">
+                                <li class="link"><a href="#">Overview</a></li>
+                                <li class="link"><a href="#">Features</a></li>
+                                <li class="link"><a href="#">Solutions</a></li>
+                                <li class="link"><a href="#">Tutorials</a></li>
+                                <li class="link"><a href="#">Pricing</a></li>
+                                <li class="link"><a href="#">Releases</a></li>
+                            </ul>
+                        </div>
+                        <!-- Sub Link -->
+                        <div class="sub-link">
+                            <h4 class="sub-link-heading">Legal</h4>
+                            <ul class="sub-items">
+                                <li class="link"><a href="#">Overview</a></li>
+                                <li class="link"><a href="#">Features</a></li>
+                                <li class="link"><a href="#">Solutions</a></li>
+                                <li class="link"><a href="#">Tutorials</a></li>
+                                <li class="link"><a href="#">Pricing</a></li>
+                                <li class="link"><a href="#">Releases</a></li>
+                            </ul>
+                        </div>
+                        <!-- Sub Link -->
+                    </div>
+                    <!--  -->
+                </div>
+                <!-- Top Container -->
+                <div class="bottom-footer-container">
+                    <div class="copyright-wrapper">
+                        <h3> Copyright @ 2023 Technical Systems Inc</h3>
+                    </div>
+                    <!--  -->
+                    <div class="social-media-container">
+                        <img src="{% static '/dist/Images/Social Media Icons/twitter-icon.svg' %}" alt="">
+                        <img src="{% static '/dist/Images/Social Media Icons/Social icon-1.svg' %}" alt="">
+                        <img src="{% static '/dist/Images/Social Media Icons/Social icon-2.svg' %}" alt="">
+                        <img src="{% static '/dist/Images/Social Media Icons/Social icon-3.svg' %}" alt="">
+                        <img src="{% static '/dist/Images/Social Media Icons/Social icon-4.svg' %}" alt="">
+                        <img src="{% static '/dist/Images/Social Media Icons/Social icon.svg' %}" alt="">
+                    </div>
+                </div>
+                <!-- Bottom Container -->
+            </div>
+        </div>
+        <!--Footer-->
+     </div>
+    </div>
+
+    <!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
+<!-- Bootsrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>

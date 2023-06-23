@@ -1,0 +1,1403 @@
+@charset "UTF-8";
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../fonts/Satoshi-Variable.woff2") format("woff2"), url("../fonts/Satoshi-Variable.woff") format("woff"), url("../fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../fonts/Satoshi-VariableItalic.woff") format("woff"), url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff"), url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff"), url("../fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff"), url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff"), url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff"), url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Satoshi-Variable";
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 100%;
+  margin-inline: auto;
+}
+.wrapper .navigation {
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin-inline: auto;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.wrapper .navigation .logo a {
+  display: flex;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.wrapper .navigation .navigation-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.wrapper .navigation .navigation-btns .login-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: center;
+  text-decoration: none;
+  height: 2rem;
+  width: 5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #08A045;
+  font-weight: 600;
+}
+.wrapper .nav-container {
+  display: none;
+}
+.wrapper .banner {
+  margin-top: 3rem;
+  max-width: 90%;
+  margin-inline: auto;
+}
+.wrapper .banner .banner-reviews {
+  margin-top: 3rem;
+}
+.wrapper .banner .visuals img {
+  height: 2.8rem;
+}
+.wrapper .banner .banner-testimonial {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.wrapper .banner .banner-testimonial .content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 0.3rem;
+}
+.wrapper .banner .banner-testimonial .content .main-review {
+  font-family: "Satoshi-Black";
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+.wrapper .banner .banner-testimonial .content .stars-review {
+  height: 2rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: -1rem;
+}
+.wrapper .banner .banner-testimonial .content .stars-review p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-family: "Satoshi-Medium";
+}
+.wrapper .banner .banner-testimonial .content .stars-review img {
+  margin-top: -1rem;
+}
+.wrapper .banner .banner-testimonial .content > div {
+  display: flex;
+}
+.wrapper .banner .main-heading {
+  font-weight: 800;
+  font-family: "Satoshi-Black";
+}
+.wrapper .banner .main-heading span {
+  color: #08A045;
+}
+.wrapper .banner .sub-heading {
+  margin-top: -0.5rem;
+  font-size: 1.3rem;
+  font-family: "Satoshi-Medium";
+  width: 85%;
+}
+.wrapper .banner .para-1 {
+  font-size: 0.9rem;
+  margin-top: 0rem;
+  width: 85%;
+}
+.wrapper .banner .get-started-btn {
+  display: flex;
+  text-decoration: none;
+  height: 2.5rem;
+  width: 11rem;
+  background: #08A045;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  gap: 0.5rem;
+}
+.wrapper .banner .banner-cta {
+  margin-top: 2rem !important;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wrapper .banner .banner-cta input {
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.wrapper .banner .banner-cta .sign-up-btn {
+  font-size: 0.9rem;
+  flex-direction: row;
+  color: #08A045;
+  height: 2rem;
+  width: 1rem;
+  margin-left: -2rem;
+}
+.wrapper .banner .social-proof {
+  display: none;
+}
+.wrapper .banner .visuals {
+  z-index: 1;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.wrapper .banner .slider-logos {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.wrapper .banner .slider-logos img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 140% !important;
+  gap: 5rem;
+}
+.wrapper .banner .look-around {
+  position: relative;
+}
+.wrapper .banner .look-around img {
+  margin-top: 2rem;
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.wrapper .banner .look-around .heading {
+  padding-top: 2rem;
+  font-weight: 800;
+  font-family: "Satoshi-Black";
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  width: 90%;
+  color: #1a1a1a;
+}
+.wrapper .banner .look-around .descriptions {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+.wrapper .banner .look-around .action-here {
+  display: flex;
+  background-color: #08A045;
+  color: #fff;
+  width: 11rem;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 4px;
+  height: 2rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+.wrapper .banner .page-heading {
+  font-family: "Satoshi-Bold";
+  padding-top: 4rem;
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  margin-left: -0.4rem;
+}
+.wrapper .banner .page-heading span img {
+  height: 5rem;
+}
+.wrapper .banner .testimonials {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+.wrapper .banner .testimonials .heading {
+  font-size: 2rem;
+  padding-top: 4rem;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-family: "Satoshi-Bold";
+  text-align: center;
+}
+.wrapper .banner .testimonials .description {
+  font-family: "Satoshi-Medium";
+  text-align: center;
+  width: 80%;
+  margin-inline: auto;
+  font-size: 0.9rem;
+}
+.wrapper .banner .testimonials .start-testing {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  background: #08A045;
+  color: #fff;
+  width: 8rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 600;
+  left: 50%;
+  margin-top: 2rem;
+  transform: translateX(-50%);
+}
+.wrapper .banner .map-container {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.wrapper .banner .map-container h1 {
+  text-transform: capitalize;
+  padding-top: 1.5rem;
+  font-family: "Satoshi-Medium";
+}
+.wrapper .banner .map-container .description, .wrapper .banner .map-container p {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.wrapper .banner .map-container .map-visuals {
+  width: 100%;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.wrapper .banner .map-container .take-action {
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  background: #08A045;
+  color: #fff;
+  width: 11rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.wrapper .banner .social-proof-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.wrapper .banner .social-proof-container h1 {
+  font-family: "Satoshi-Black";
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.wrapper .banner .social-proof-container .description {
+  margin-top: -0.5rem;
+  font-family: "Satoshi-Medium";
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+.wrapper .banner .main-cards {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  color: #fff;
+}
+.wrapper .banner .main-cards h1 {
+  font-family: "Satoshi-Bold";
+  color: #fff;
+  font-size: 1.8rem;
+}
+.wrapper .banner .main-cards .enquiries-text {
+  margin-top: -1.2rem;
+}
+.wrapper .banner .main-cards .card-main-heading {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  color: #fff !important;
+  font-family: "Satoshi-Bold";
+}
+.wrapper .banner .main-cards .card-description {
+  width: 90%;
+  padding-left: 0.5rem;
+  opacity: 0.9;
+  padding-top: 0.5rem !important;
+  font-size: 0.9rem;
+  font-family: "Satoshi-Regular";
+}
+.wrapper .banner .main-cards img {
+  height: 15rem;
+  width: 100%;
+  padding: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.wrapper .banner .application-progress {
+  margin-top: 6rem;
+}
+.wrapper .banner .application-progress .heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  width: 100%;
+  font-family: "Satoshi-Bold";
+}
+.wrapper .banner .application-progress .sub-heading {
+  font-size: 1rem;
+  font-family: "Satoshi-Medium";
+}
+.wrapper .banner .application-progress .description, .wrapper .banner .application-progress .sub-description {
+  display: none;
+}
+.wrapper .banner .application-progress .application-steps {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+.wrapper .banner .application-progress .application-steps ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.wrapper .banner .application-progress .take-action {
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  background: #08A045;
+  color: #fff;
+  width: 11rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.wrapper .banner .application-visuals {
+  margin-top: 4rem;
+}
+.wrapper .banner .application-visuals .application-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.wrapper .banner .application-visuals .application-container .step-1, .wrapper .banner .application-visuals .application-container .step-2, .wrapper .banner .application-visuals .application-container .step-3 {
+  width: 13rem;
+  height: 8rem;
+  background: #FD3B3B;
+  color: #fff;
+  border-radius: 4px;
+}
+.wrapper .banner .application-visuals .application-container .step-1 .heading, .wrapper .banner .application-visuals .application-container .step-2 .heading, .wrapper .banner .application-visuals .application-container .step-3 .heading {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 60%;
+  font-weight: 500;
+  font-family: "Satoshi-Bold";
+  margin-inline: auto;
+  color: #fff;
+}
+.wrapper .banner .application-visuals .application-container .step-1 .numbering, .wrapper .banner .application-visuals .application-container .step-2 .numbering, .wrapper .banner .application-visuals .application-container .step-3 .numbering {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding-top: 1.2rem;
+  padding-left: 1rem;
+  font-family: "Satoshi-Bold";
+  color: #fff;
+}
+.wrapper .banner .application-visuals .application-container .step-2 {
+  position: relative;
+  left: 50%;
+  background: #FEB800;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .banner .application-visuals .application-container .step-2 .heading {
+  font-family: "Satoshi-Bold";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .banner .application-visuals .application-container .step-3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #08A045;
+}
+.wrapper .banner .application-visuals .application-container .step-3 .heading {
+  font-family: "Satoshi-Bold";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .banner .knowledge-center {
+  margin-top: 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  line-height: 1.2;
+  padding-bottom: 6rem;
+}
+.wrapper .banner .knowledge-center .knowledge-gradient {
+  width: 25rem !important;
+  height: 3.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .banner .knowledge-center span {
+  color: #08A045;
+}
+.wrapper .banner .knowledge-center .heading {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Satoshi-Bold";
+}
+.wrapper .banner .knowledge-center .heading .knowledge-center-icon {
+  height: 1.9rem;
+  width: 1.9rem;
+  margin-top: -0.4rem;
+}
+.wrapper .banner .knowledge-center .main-visual-knowledge-center {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .banner .knowledge-center .main-visual-knowledge-center img {
+  width: 100%;
+}
+.wrapper .banner .knowledge-center .take-action {
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  background: #08A045;
+  color: #fff;
+  width: 11rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 600;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-testimonial-1 {
+  background: #F7F7F7;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.slider-testimonial-1 .profile-picture {
+  height: 5rem;
+  width: 5rem;
+  margin: auto;
+}
+.slider-testimonial-1 .partner-name {
+  color: #1a1a1a;
+  font-weight: 800;
+  font-family: "Satoshi-Bold";
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.slider-testimonial-1 .testimonial {
+  color: #1a1a1a;
+  text-align: center;
+}
+.slider-testimonial-1 .star-rating {
+  display: flex;
+}
+
+.testimonials-sliders > div {
+  background: #F7F7F7 !important;
+  min-width: 20rem !important;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.social-proof-container > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-cards > * {
+  background-color: #08A045;
+  border-radius: 4px;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .navigation {
+    padding: 1rem 0 !important;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .navigation .main-navigation {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 3rem;
+    position: relative;
+  }
+  .navigation .main-navigation .nav-items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: -5rem;
+  }
+  .nav-container {
+    position: absolute;
+    top: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    position: relative;
+    z-index: 100;
+    list-style: none;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-container a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-family: "Satoshi-Medium";
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-container a:hover {
+    text-decoration: none;
+    color: #08A045;
+  }
+  .nav-container .active {
+    color: #08A045;
+    font-weight: 600;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .banner-icons {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translateX(-80%);
+    z-index: 1000;
+    height: 20rem;
+    width: 30rem;
+  }
+  .banner-icons .icon-3 {
+    position: absolute;
+    right: 12%;
+  }
+  .banner-icons .icon-2 {
+    position: absolute;
+    bottom: 10%;
+  }
+  .banner-icons .icon-1 {
+    position: absolute;
+    right: 18%;
+    bottom: -10%;
+  }
+  .banner-wrapper {
+    margin-top: 0rem;
+    display: flex;
+    gap: 3rem;
+  }
+  .banner-wrapper .content {
+    width: 45%;
+  }
+  .banner-wrapper .content .main-heading span img {
+    height: 3.5rem;
+  }
+  .banner-wrapper .social-proof {
+    margin-top: 3rem;
+    display: flex !important;
+    gap: 2rem;
+  }
+  .banner-wrapper .social-proof .years {
+    transition: transform 0.3s ease-in-out;
+  }
+  .banner-wrapper .social-proof .years:hover {
+    transform: translateY(-1rem);
+  }
+  .banner-wrapper .social-proof .rankings {
+    transition: transform 0.3s ease-in-out;
+  }
+  .banner-wrapper .social-proof .rankings:hover {
+    transform: translateY(-1rem);
+  }
+  .banner-wrapper .social-proof .description {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Satoshi-Regular";
+  }
+  .banner-wrapper .social-proof .heading {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-weight: 700;
+    font-family: "Satoshi-Bold";
+    text-align: center;
+    color: #08A045;
+    transition: color 0s ease-in-out;
+  }
+  .banner-wrapper .sub-heading {
+    font-family: "Satoshi-Medium" !important;
+    margin-top: 1rem !important;
+  }
+  .banner-wrapper .para-1 {
+    margin-top: -0.5rem;
+  }
+  .banner-wrapper .banner-image {
+    margin-top: -9rem;
+    padding: 0 !important;
+    position: relative;
+    z-index: 1;
+    width: 48%;
+    transform: translateX(-1rem);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .slider-logos {
+    position: relative;
+    z-index: 3;
+    height: 6rem;
+    width: 100%;
+  }
+  .slider-logos img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+  .testimonial {
+    margin-top: 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  .look-around {
+    display: flex;
+    align-items: start !important;
+    justify-content: start !important;
+    gap: 4rem;
+    margin-top: 5rem;
+    height: 80vh;
+  }
+  .look-around .visuals {
+    height: 100%;
+  }
+  .look-around .visuals img {
+    height: 100% !important;
+    justify-content: cover;
+  }
+  .look-around .heading {
+    font-size: 2.5rem !important;
+    width: 75% !important;
+    margin-top: -2.5rem !important;
+    color: #1a1a1a;
+    font-weight: "Satoshi-Bold";
+  }
+  .look-around .descriptions {
+    width: 90%;
+  }
+  .look-around .action-here {
+    margin-top: 4rem !important;
+    gap: 0.5rem;
+  }
+  .look-around .action-here .arrow-icon {
+    height: 2rem !important;
+    width: 1rem !important;
+    margin-top: 0rem !important;
+  }
+  .page-heading {
+    font-family: "Satoshi-Bold";
+    margin-top: 4rem;
+    font-size: 4rem !important;
+  }
+  .page-heading span {
+    margin-left: 0.5rem;
+  }
+  .services-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .services-wrapper .services-main-heading {
+    font-size: 50px;
+    font-family: "Satoshi-Medium";
+    color: #08A045;
+  }
+  .services-wrapper .sub-heading {
+    font-size: 1rem !important;
+    color: #1a1a1a;
+    width: 35% !important;
+  }
+  .services-wrapper .services-card-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 1rem !important;
+    justify-content: space-between;
+  }
+  .services-wrapper .services-card-container .card-heading {
+    font-family: "Satoshi-Bold";
+    color: #1a1a1a;
+  }
+  .services-wrapper .services-card-container .card-description {
+    font-size: 0.9rem;
+    font-family: "Satoshi-Medium";
+    color: #1a1a1a;
+    opacity: 0.9;
+  }
+  .services-wrapper .services-card-container > div {
+    background: #EEF8F2;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #EEF8F2;
+    transition: all 0.3s ease-in-out;
+  }
+  .services-wrapper .services-card-container > div:hover {
+    border: 1.2px solid #08A045;
+    background: #f9fffc;
+    transform: translateY(-0.3rem);
+  }
+  .services-wrapper .key-features-container {
+    margin-top: 50px;
+  }
+  .services-wrapper .key-features-container .features-main-heading {
+    font-size: 35px;
+    color: #1a1a1a;
+    font-family: "Satoshi-Medium";
+  }
+  .services-wrapper .key-features-container .features-main-heading span {
+    color: #08A045;
+    font-family: "Satoshi-Medium";
+  }
+  .services-wrapper .key-features-container .features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #1a1a1a;
+    font-family: "Satoshi-Medium";
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  .services-wrapper .action {
+    background: #08A045;
+    color: #fff;
+    height: 2rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-family: "Satoshi-Bold";
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .testimonials {
+    margin-top: 6rem;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+  .testimonials .slider-testimonial-1:hover {
+    transform: translateY(-2rem);
+  }
+  .testimonials .slider-testimonial-1 {
+    background: #F7F7F7;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .testimonials .slider-testimonial-1 .profile-picture {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    width: 10rem;
+  }
+  .testimonials .slider-testimonial-1 .profile-picture img {
+    height: 7rem !important;
+    width: 7rem !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+  }
+  .testimonials .slider-testimonial-1 .partner-name {
+    font-family: "Satoshi-Medium";
+    font-weight: 800;
+    color: #1a1a1a;
+    width: 10rem;
+    text-align: center;
+  }
+  .testimonials .slider-testimonial-1 .star-rating {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .testimonials .slider-testimonial-1 p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #1a1a1a;
+  }
+  .testimonials .testiomonial-description {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    min-width: 20rem !important;
+    gap: 2rem;
+    margin-top: -1rem;
+  }
+  .testimonials .testiomonial-description .heading, .testimonials .testiomonial-description .description {
+    text-align: left !important;
+    font-family: "Satoshi-Variable";
+  }
+  .testimonials .testiomonial-description .description {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0rem !important;
+    width: 70%;
+    margin-top: -2rem !important;
+  }
+  .testimonials .start-testing {
+    margin: 0 !important;
+    margin-left: -6rem !important;
+  }
+  .testimonials .testimonials-sliders {
+    position: relative;
+    width: 70%;
+    display: flex;
+    gap: 1.5rem !important;
+    margin-left: -10rem !important;
+  }
+  .map-container {
+    margin-top: 6rem !important;
+    display: flex !important;
+    gap: 2rem;
+    flex-direction: row !important;
+    width: 100%;
+    height: 80vh !important;
+  }
+  .map-container .map-wrapper {
+    display: flex;
+    justify-content: start !important;
+    margin-top: -1.5rem;
+    gap: 3rem;
+  }
+  .map-container .map-wrapper h1 {
+    font-size: 1.7rem !important;
+    font-family: "Satoshi-Medium";
+  }
+  .map-container .map-wrapper > div {
+    width: 50%;
+  }
+  .map-container .visuals {
+    position: relative;
+  }
+  .map-container .visuals img {
+    height: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .social-proof-container {
+    margin-top: 6rem !important;
+    max-width: 80%;
+    margin: auto;
+    font-family: "Satoshi-Variable";
+  }
+  .social-proof-container h1 {
+    font-size: 2.2rem !important;
+    Font-family: "Satoshi-Black";
+    font-weight: 900;
+  }
+  .social-proof-container p {
+    margin-top: -1rem;
+    font-family: "Satoshi-Regular";
+    font-size: 1rem !important;
+  }
+  .main-cards > div {
+    width: 25rem !important;
+    padding-bottom: 2rem;
+  }
+  .main-cards {
+    margin-top: 6rem !important;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: row !important;
+  }
+  .main-cards .knowledge-btn {
+    width: 10rem !important;
+  }
+  .main-cards .make-enquiry, .main-cards .knowledge-btn {
+    margin-left: 0.5rem;
+    background: #fff;
+    height: 2rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a;
+    font-family: "Satoshi-Bold";
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .main-cards h1 {
+    font-size: 1.7rem;
+    color: #fff;
+    font-family: "Satoshi-Bold";
+  }
+  .main-cards .enquiries-text {
+    margin-top: -1.5rem;
+  }
+  .main-cards p {
+    width: 100% !important;
+    font-family: "Satoshi-Regular";
+  }
+  .step-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .application-progress {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between !important;
+    gap: 3rem;
+  }
+  .application-progress .content .heading {
+    font-size: 2.5rem !important;
+    font-weight: 500;
+    font-family: "Satoshi-Medium";
+  }
+  .application-progress .content .heading span {
+    color: #08A045;
+  }
+  .application-progress .content .sub-heading {
+    font-size: 1.3rem !important;
+    font-family: "Satoshi-Regular";
+    padding-top: 1rem;
+  }
+  .application-progress .content .description {
+    margin-top: 2rem;
+    font-family: "Satoshi-Regular";
+    font-size: 1rem !important;
+    display: block !important;
+    width: 90%;
+  }
+  .application-progress .content .application-steps {
+    margin-top: -0.5rem !important;
+  }
+  .application-progress .content .take-action {
+    margin-top: 4rem !important;
+  }
+  .application-progress .application-visuals {
+    margin-right: -4.5rem;
+  }
+  .application-progress .application-visuals .numbering, .application-progress .application-visuals .heading {
+    color: #fff;
+    font-family: "Satoshi-Medium";
+  }
+  .application-progress .application-visuals .heading {
+    position: relative;
+    transform: translateY(-1rem);
+  }
+  .knowledge-center {
+    width: 100%;
+  }
+  .knowledge-center .main-visual-knowledge-center {
+    margin-top: 3rem !important;
+  }
+  .knowledge-center .main-visual-knowledge-center img {
+    margin-top: 1rem;
+    max-width: 40rem;
+  }
+  .knowledge-center .heading {
+    font-family: "Satoshi-Black";
+    font-size: 3rem !important;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-transform: capitalize;
+    margin: auto;
+  }
+  .knowledge-center .heading .knowledge-center-icon {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+  .footer {
+    margin-top: 6rem;
+    height: 70vh;
+    width: 100vw;
+    position: absolute;
+    left: 0 !important;
+    margin-inline: auto;
+    background: #f5f5f5;
+  }
+  .footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 4rem;
+  }
+  .footer .footer-wrapper .description {
+    margin-top: 5.5rem;
+  }
+  .footer .footer-wrapper .description .main-footer-heading {
+    color: #1a1a1a;
+    font-family: "Satoshi-Medium";
+    font-size: 1.3rem;
+    width: 60%;
+  }
+  .footer .footer-wrapper .main-footer-container, .footer .footer-wrapper .bottom-footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footer-wrapper .main-links {
+    margin-top: 3rem;
+    display: flex;
+    gap: 5rem;
+  }
+  .footer .footer-wrapper .main-links .sub-link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .footer .footer-wrapper .main-links .sub-link h4 {
+    color: #98A2B3;
+    font-size: 0.8rem;
+    font-family: "Satoshi-Medium";
+  }
+  .footer .footer-wrapper .main-links .sub-items {
+    margin-top: -0.3rem;
+    padding: 0 !important;
+    width: 5rem;
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .footer .footer-wrapper .main-links .sub-items a:hover {
+    color: #c9c9c9;
+    margin-left: 0.5rem;
+  }
+  .footer .footer-wrapper .main-links .sub-items .link {
+    position: relative;
+  }
+  .footer .footer-wrapper .main-links .sub-items a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 0.9rem;
+    font-family: "Satoshi-Medium";
+    transition: color 0.2s ease-in-out;
+    transition: margin-left 0.2s ease-in-out;
+  }
+  .footer .footer-wrapper .bottom-footer-container {
+    display: flex;
+    align-items: center;
+  }
+  .footer .footer-wrapper .bottom-footer-container .copyright-wrapper {
+    display: block;
+    height: 100%;
+    align-items: center;
+    position: relative;
+  }
+  .footer .footer-wrapper .bottom-footer-container .copyright-wrapper h3 {
+    position: relative;
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+  .footer .footer-wrapper .bottom-footer-container h3 {
+    color: #98A2B3;
+    font-family: "Satoshi-Medium";
+    font-size: 0.95rem;
+  }
+  .footer .footer-wrapper .bottom-footer-container .social-media-container {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1.5rem;
+  }
+  .footer .footer-wrapper .bottom-footer-container .social-media-container img {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  .contact-container {
+    padding: 3rem 0;
+    background: hsla(144, 90%, 33%, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .contact-container .content-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+  .contact-container .content-wrapper .contact-details {
+    background-color: #08A045;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    min-height: 70vh;
+    color: #fff;
+  }
+  .contact-container .content-wrapper .contact-details .top-wrapper {
+    width: 100%;
+  }
+  .contact-container .content-wrapper .contact-details .top-wrapper .main-heading {
+    font-size: 1.8rem;
+    color: #fff;
+    padding-top: 1rem;
+    font-family: "Satoshi-Bold";
+  }
+  .contact-container .content-wrapper .contact-details .top-wrapper .subheading {
+    font-size: 0.9rem;
+  }
+  .contact-container .content-wrapper .contact-details .bottom-wrapper .location p {
+    width: 60%;
+    text-transform: capitalize;
+  }
+  .contact-container .content-wrapper .contact-details .bottom-wrapper p {
+    font-size: 0.9rem;
+  }
+  .contact-container .content-wrapper .contact-details .bottom-wrapper > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .contact-container .content-wrapper > * {
+    width: 50%;
+  }
+  .contact-container .contact-form input {
+    width: 100%;
+  }
+  .contact-container .contact-form form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .contact-container .contact-form form .submit-btn {
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #08A045;
+    color: #fff;
+    font-family: "Satoshi-Medium";
+    border-radius: 4px;
+    margin-top: -1rem;
+  }
+  .contact-container .contact-form .form-input-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+  .contact-container .contact-form .form-input-wrapper p {
+    margin-bottom: 0.5rem;
+    font-family: "Satoshi-Medium";
+  }
+  .contact-container .contact-form .form-input-wrapper input {
+    margin-top: -1rem !important;
+    border: 1.2px solid #1a1a1a;
+    height: 2rem;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 0.5rem;
+  }
+  .application-progress > div {
+    width: 50%;
+  }
+  .map-container > div {
+    width: 50%;
+  }
+  .look-around > div {
+    width: 50%;
+  }
+  .social-proof > div {
+    background: rgba(245, 245, 245, 0.1);
+    border: 1px solid #d8d8d8;
+    box-shadow: inset 14.4667px -14.4667px 14.4667px rgba(187, 187, 187, 0.1), inset -14.4667px 14.4667px 14.4667px rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(14.4667px);
+            backdrop-filter: blur(14.4667px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px;
+    padding: 0 1rem;
+    max-width: 15rem;
+  }
+}/*# sourceMappingURL=main.css.map */

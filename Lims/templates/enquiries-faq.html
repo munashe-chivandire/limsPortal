@@ -1,0 +1,245 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMS - Enquiries & FAQ</title>
+
+    <link rel="stylesheet" href="{% static '/dist/enquiries-faq.css' %}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo">
+        <img src="{% static '/dist/Images/logo_transparent.png' %}" alt="">
+        </div>
+        <!--  -->
+
+        <div class="navigation-items">
+          <ul class="nav-items">
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="./#services">Services</a></li>
+            <li class="nav-link"><a href="#" class="active">Enquiries</a></li>
+            <li class="nav-link"><a href="./#contact-us">Contact Us</a></li>
+            <li class="nav-link"><a href="./knowledge-center">Knowledge Center</a></li>
+          </ul>
+        </div>
+        <!--  -->
+
+
+        <div class="user-profile">
+          <div class="notifications">
+            <img src="{% static '/dist/Images/knowledge-center/notifications-icon.svg' %}" alt="notifications-icon" class="notifications-icon">
+
+              <div class="avatar-dropdown">
+                <div class="avatar-container">
+                  <img src=".{% static '/dist/Images/knowledge-center/avatar.svg' %}" alt="avatar-icon" class="avatar-icon">
+                </div>
+                <!--  -->
+                <p>Shaun_C</p>
+                <!--  -->
+                <div class="dropdown">
+                  <img src="{% static '/dist/Images/knowledge-center/avatar-dropdown.svg' %}" alt="dropdown-icon" class="dropdown-icon">
+                </div>
+              </div>
+
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <div class="divider"></div>
+      <!--  -->
+
+    <div class="container">
+        <div class="content-wrapper">
+                <!--  -->
+                <main>
+                    <div class="introducion">
+                        <h1 class="main-heading">Questions?</h1>
+                        <h3 class="subheading">We've got the answers!</h3>
+                    </div>
+
+                    <div class="main-faq-container">
+                        <ul uk-accordion="multiple: true">
+                            <li class="uk-open">
+                                <a class="uk-accordion-title" href="#">What is a land management system?</a>
+                                <div class="uk-accordion-content">
+                                    <p>A land management system is a software application that helps manage land resources and related data. It can be used for a variety of purposes such as land use planning, environmental management, and natural resource management.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">What is GIS technology?</a>
+                                <div class="uk-accordion-content">
+                                    <p>GIS technology stands for Geographic Information System technology. It is a computer-based tool that allows users to collect, store, analyze, and visualize geographic data.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">How does GIS technology help in land management?</a>
+                                <div class="uk-accordion-content">
+                                    <p>GIS technology helps in land management by providing a way to store and analyze spatial data. This can help users make better decisions about land use and resource management.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">What are the benefits of using GIS technology in land management?</a>
+                                <div class="uk-accordion-content">
+                                    <p>Some benefits of using GIS technology in land management include improved decision-making, increased efficiency, and better communication between stakeholders.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">What are the features of a good land management system?</a>
+                                <div class="uk-accordion-content">
+                                    <p>Some features of a good land management system include the ability to store and manage large amounts of data, the ability to integrate with other systems, and the ability to generate reports and visualizations.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">How can I get started with GIS technology for land management?</a>
+                                <div class="uk-accordion-content">
+                                    <p>To get started with GIS technology for land management, you can start by learning the basics of GIS software such as ArcGIS or QGIS. There are also many online resources available that can help you learn more about GIS technology.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--  -->
+
+                    <div class="enquiries-form-container">
+                        <div>
+                            <h2 class="still-curious">Still Curious?</h2>
+                            <h3 class="subheading">Here's a form you can fill out and we will get right back to you!</h3>
+                        </div>
+
+                        <div>
+                            <form>
+                                <div>
+                            
+                                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Full Name" aria-label="Medium">
+                                </div>
+                                <!--  -->
+                                <div>
+                                   
+                                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Email Address" aria-label="Medium">
+                                </div>
+                                <!--  -->
+                                <div>
+                                  
+                                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Subject" aria-label="Medium">
+                                </div>
+                                <div>
+                                    
+                                    <textarea class="uk-textarea" rows="5" placeholder="Message" aria-label="Textarea"></textarea>
+                                </div>
+                                <!--  -->
+
+                                <a href="#" class="submit-btn">Send</a>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="main-footer-container">
+                <div class="description">
+                        <h2 class="main-footer-heading">
+                            Land Information Management System
+                        </h2>
+                </div>
+                <!--  -->
+                <div class="main-links">
+                    <div class="sub-link">
+                        <h4 class="sub-link-heading">Product</h4>
+                        <ul class="sub-items">
+                            <li class="link"><a href="#">Overview</a></li>
+                            <li class="link"><a href="#">Features</a></li>
+                            <li class="link"><a href="#">Solutions</a></li>
+                            <li class="link"><a href="#">Tutorials</a></li>
+                            <li class="link"><a href="#">Pricing</a></li>
+                            <li class="link"><a href="#">Releases</a></li>
+                        </ul>
+                    </div>
+                    <!-- Sub Link -->
+                    <div class="sub-link">
+                        <h4 class="sub-link-heading">Company</h4>
+                        <ul class="sub-items">
+                            <li class="link"><a href="#">Overview</a></li>
+                            <li class="link"><a href="#">Features</a></li>
+                            <li class="link"><a href="#">Solutions</a></li>
+                            <li class="link"><a href="#">Tutorials</a></li>
+                            <li class="link"><a href="#">Pricing</a></li>
+                            <li class="link"><a href="#">Releases</a></li>
+                        </ul>
+                    </div>
+                    <!-- Sub Link -->
+                    <div class="sub-link">
+                        <h4 class="sub-link-heading">Resources</h4>
+                        <ul class="sub-items">
+                            <li class="link"><a href="#">Overview</a></li>
+                            <li class="link"><a href="#">Features</a></li>
+                            <li class="link"><a href="#">Solutions</a></li>
+                            <li class="link"><a href="#">Tutorials</a></li>
+                            <li class="link"><a href="#">Pricing</a></li>
+                            <li class="link"><a href="#">Releases</a></li>
+                        </ul>
+                    </div>
+                    <!-- Sub Link -->
+                    <div class="sub-link">
+                        <h4 class="sub-link-heading">Social</h4>
+                        <ul class="sub-items">
+                            <li class="link"><a href="#">Overview</a></li>
+                            <li class="link"><a href="#">Features</a></li>
+                            <li class="link"><a href="#">Solutions</a></li>
+                            <li class="link"><a href="#">Tutorials</a></li>
+                            <li class="link"><a href="#">Pricing</a></li>
+                            <li class="link"><a href="#">Releases</a></li>
+                        </ul>
+                    </div>
+                    <!-- Sub Link -->
+                    <div class="sub-link">
+                        <h4 class="sub-link-heading">Legal</h4>
+                        <ul class="sub-items">
+                            <li class="link"><a href="#">Overview</a></li>
+                            <li class="link"><a href="#">Features</a></li>
+                            <li class="link"><a href="#">Solutions</a></li>
+                            <li class="link"><a href="#">Tutorials</a></li>
+                            <li class="link"><a href="#">Pricing</a></li>
+                            <li class="link"><a href="#">Releases</a></li>
+                        </ul>
+                    </div>
+                    <!-- Sub Link -->
+                </div>
+                <!--  -->
+            </div>
+            <!-- Top Container -->
+            <div class="bottom-footer-container">
+                <div class="copyright-wrapper">
+                    <h3> Copyright @ 2023 Technical Systems Inc</h3>
+                </div>
+                <!--  -->
+                <div class="social-media-container">
+                    <img src="{% static '/dist/Images/Social Media Icons/twitter-icon.svg' %}" alt="">
+                    <img src="{% static '/dist/Images/Social Media Icons/Social icon-1.svg' %}" alt="">
+                    <img src="{% static '/dist/Images/Social Media Icons/Social icon-2.svg' %}" alt="">
+                    <img src="{% static '/dist/Images/Social Media Icons/Social icon-3.svg' %}" alt="">
+                    <img src="{% static '/dist/Images/Social Media Icons/Social icon-4.svg' %}" alt="">
+                    <img src="{% static '/dist/Images/Social Media Icons/Social icon.svg' %}" alt="">
+                </div>
+            </div>
+            <!-- Bottom Container -->
+        </div>
+    </div>
+    <!--Footer-->
+
+    <!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
+<!-- Bootsrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>
